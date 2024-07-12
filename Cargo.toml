@@ -1,0 +1,23 @@
+[package]
+name = "systemd"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/alexrudy/systemdrs"
+documentation = "https://docs.rs/systemdrs"
+
+
+[dependencies]
+camino = { version = "1", optional = true }
+thiserror = "1"
+tokio = { version = "1", optional = true, default-features = false, features = [
+    "net",
+] }
+tracing = "0.1"
+
+[features]
+notify = ["dep:tokio", "dep:camino"]
+
+[lints.rust]
+missing_docs = "warn"
+missing_debug_implementations = "warn"
