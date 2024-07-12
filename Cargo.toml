@@ -1,11 +1,16 @@
 [package]
-name = "systemd"
+name = "systemd-rs"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-repository = "https://github.com/alexrudy/systemdrs"
-documentation = "https://docs.rs/systemdrs"
-
+description = "A rust library for interacting with systemd"
+repository = "https://github.com/alexrudy/systemd-rs"
+documentation = "https://docs.rs/systemd-rs"
+rust-version = "1.74"
+readme = "README.md"
+authors = ["Alex Rudy <opensource@alexrudy.net>"]
+categories = ["linux", "systemd", "async"]
+keywords = ["systemd", "linux", "async"]
 
 [dependencies]
 camino = { version = "1", optional = true }
@@ -21,3 +26,6 @@ notify = ["dep:tokio", "dep:camino"]
 [lints.rust]
 missing_docs = "warn"
 missing_debug_implementations = "warn"
+
+[package.metadata.docs.rs]
+all-features = true
