@@ -9,7 +9,7 @@ documentation = "https://docs.rs/systemd-rs"
 rust-version = "1.74"
 readme = "README.md"
 authors = ["Alex Rudy <opensource@alexrudy.net>"]
-categories = ["linux", "systemd", "async"]
+categories = ["network-programming", "os::linux-apis"]
 keywords = ["systemd", "linux", "async"]
 
 [dependencies]
