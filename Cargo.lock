@@ -155,7 +155,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "systemd-rs"
+name = "systemd-connector"
 version = "0.1.0"
 dependencies = [
  "camino",
